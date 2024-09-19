@@ -1,0 +1,74 @@
+.contenedorr {
+    background-color: rgb(158, 89, 5);
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav  nav nav"
+                         "section1 section2 ads"
+                         "footer footer footer";
+    
+}
+
+.contenedorr .header {
+    background-color: rgb(201, 21, 21);
+    grid-column: header;
+}
+
+.contenedorr .nav {
+    background-color: rgb(184, 184, 173);
+    grid-column: nav;
+}
+
+.contenedorr .section1 {
+    background-color: rgb(78, 184, 246);
+    grid-column: section1;
+    
+}
+
+.contenedorr .section2 {
+    background-color: rgb(97, 136, 159);
+    grid-column: section2;
+}
+
+.contenedorr .ads {
+    background-color: rgb(184, 59, 175);
+    grid-column: ads;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contenedorr .footer {
+    background-color: rgb(180, 180, 180);
+    grid-column: footer;
+}
+
+.pub {
+    background-color: beige;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contenedorr .footer2 {
+    background-color: rgb(180, 180, 180);
+    grid-column: footer;
+    display: flex; /* Añadir esta línea */
+    flex-direction: row; /* Todo el contenido se alineará en fila */
+    flex-wrap: wrap; /* Permitir que las cajas se envuelvan si es necesario */
+    justify-content: center; 
+    align-items: center;
+}
+
+.footer2 .foo {
+    
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(159, 56, 56);
+    width: auto;
+}
+
